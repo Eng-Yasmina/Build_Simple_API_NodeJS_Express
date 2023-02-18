@@ -1,0 +1,235 @@
+/* Load Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Base Rules */
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* Layout Rules */
+section {
+    padding: 1em;
+    height: 100vh;
+    width: 100%;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2%;
+}
+
+/* ---- Module Rules ---- */
+/*index page*/
+header {
+    background-color: transparent;
+    padding: 1em 4em;
+    position: fixed;
+}
+
+header a {
+    color: #f0f0f0;
+    font-size: 1.8em;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+}
+
+header a span {
+    font-size: 0.53em;
+    font-weight: 400;
+}
+
+.promo__main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, #a7189bab 0%, #0062ffcc 100%);
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    transition: 3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4em;
+}
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    width: 30em;
+}
+.fa-instagram {
+    color: #ffee00;
+    font-size: 8em;
+    rotate: -25deg;
+}
+.fa-youtube {
+    color: #e01414;
+    font-size: 14em;
+    rotate: 15deg;
+    transform: translateY(0.3em);
+}
+
+.fa-facebook {
+    color: #3914e0;
+    font-size: 9em;
+    rotate: -15deg; 
+}
+
+.fa-tiktok {
+    color: #dadada;
+    font-size: 9em;
+    rotate: -15deg; 
+}
+
+.promo__main__title {
+    color: #f0f0f0;
+    font-size: 5em;
+    font-weight: 700;
+    margin: 0.9em 0 0.3em 0;
+    letter-spacing: 1px;
+}
+
+.promo__main__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo__main__form__label {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed #555;
+    color: #444;
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+    width: 15em;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    background: rgba(193, 228, 252, 0.322);
+}
+
+input[type=file] {
+    display: none;
+  }
+
+
+.promo__main__form__submit {
+    color: #f0f0f0;
+    background-color: #3a6cf4;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 0.937em 2.18em;
+    border-radius: 15px;
+    margin-top: 25px;
+    display: inline-block;
+    transition: 0.7s ease;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+}
+.promo__main__form__submit:hover {
+    transform: scale(1.05);
+}
+.promo__main__form__errmsg, .promo__main__form__errmsg2 {
+    position: fixed;
+    bottom: 0.5em;
+    font-size: 1em;
+    font-weight: 300;
+    background: #f1aeb5;
+    border: 1px solid #c46972;
+    color: #b02a37;
+    padding: 0.5rem 1rem 0.5rem 1rem;border-radius: 0.375rem;
+    display: none;
+}
+
+
+
+/** gallery page **/
+.bromo__gallery__container {
+    background: linear-gradient(90deg, #491853ab 0%, #180294cc 100%);
+    font-family: 'Quicksand', sans-serif;
+    display: none;
+}
+
+.bromo__gallery__title {
+    position: fixed;
+    color: #f0f0f0;
+    right: 9vw;
+    font-size: 80px;
+    font-weight: 300;
+    bottom: 63vh;
+    text-align: end;
+}
+.bromo__gallery__title span {
+    font-weight: 500;
+}
+
+.bromo__gallery__content {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.bromo__gallery__content__card {
+    background: linear-gradient(135deg,rgba(167, 138, 180, 0.5), rgba(126, 150, 151, 0.5), transparent);
+    box-shadow: 0 5px 25px rgba(1 1 1 15%);
+    padding:10px;
+    margin: 0 15px;
+    transition: 0.7s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3%;
+    text-align: center;
+    gap: 5px;
+    color: #f0f0f0;
+}
+
+.bromo__gallery__content__info h3{
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bromo__gallery__content__image {
+    width: 100%;
+}
+
+.go-home {
+    cursor: pointer;
+    position: fixed;
+    bottom: 7%;
+    right: 3%;
+    background: transparent;
+    transition: 0.7s ease;
+}
+.go-home:hover {
+    transform: scale(1.1);
+}
+
+.fa-circle-chevron-right {
+    color: #F0814E;
+    font-size: 4em;
+}
